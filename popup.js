@@ -40,6 +40,7 @@ async function addNewSite() {
     if (added) {
       input.value = '';
       renderWhitelist();
+      chrome.action.setBadgeText({ text: '' });
     }
   }
 }
