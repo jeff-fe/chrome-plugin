@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>白名单限制</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>网站访问白名单</h1>
+
+    <div class="add-site">
+      <input type="text" id="newSite" placeholder="输入网址 (e.g., example.com)">
+      <button id="addSite">添加</button>
+    </div>
+
+    <div class="whitelist">
+      <h2>白名单</h2>
+      <div id="whitelistContainer"></div>
+    </div>
+  </div>
+  <script type="module" src="whitelist.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
